@@ -15,10 +15,10 @@ signin = conn.find_element_by_xpath("/html/body/nav/div/a[2]")
 signin.click()
 time.sleep(2)
 username = conn.find_element_by_name("session_key")
-username.send_keys("dontchallangeme13@gmail.com")
+username.send_keys(f"{input('put your userid')}")
 
 password = conn.find_element_by_name("session_password")
-password.send_keys("Monthan@123")
+password.send_keys(f"{input('put your userid password')}")
 
 login = conn.find_element_by_xpath('//*[@id="organic-div"]/form/div[3]/button')
 login.click()
