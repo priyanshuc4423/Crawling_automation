@@ -10,10 +10,10 @@ driver = webdriver.Chrome(CHROMECAST)
 driver.get('https://www.instagram.com')
 time.sleep(2)
 login_username = driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input')
-login_username.send_keys('arrogant_is_my_name')
+login_username.send_keys(f'{input("username")}')
 
 login_password = driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input')
-login_password.send_keys('9866560247')
+login_password.send_keys(f'{input("password")}')
 
 
 login_button = driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[3]/button')
